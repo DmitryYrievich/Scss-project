@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500|Roboto:900|Open+Sans:900');
+$main-color: #ffcc00;
+$title-font: Roboto;
+$text-font: Raleway;
+
+body {
+	min-width: 1150px;
+}
+main {
+	height: 620px;
+}
+
+h4, h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	font-family: $title-font;
+	font-size: 60px;
+	width: 450px;
+	margin: 0 auto;
+	color: $main-color;
+	padding-bottom: 55px;
+	margin-top: 0;
+}
+
+h4 {
+	font-family: $text-font;
+	font-size: 18px;
+	color: #898f8f;
+	margin: 110px 0 20px 0;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.content {
+	margin: 0 20%;
+	.bonfire {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+
+.bonfire:before,
+.bonfire:after{
+	content: '';
+	border-width: 0 10px;
+	display: inline-block;
+	vertical-align: top;
+	width: 210px;
+	height: 1px;
+	margin: 10px;
+	background: $main-color;
+}
+
+.leftside {
+	position: relative;
+	width: 50%;
+	float: left;
+	height: 560px;
+	border-right: 1pt solid $main-color;
+	.card {
+	    position: relative;
+	    margin: 0 auto;
+	    float: right;
+	    margin-right: 80px;
+	    margin-top: 60px;
+	}	
+}
+.leftside-left {
+	position: absolute;
+	top: 265px;
+	right: 548px;
+}
+.photo {
+	position: relative;
+	display: block;
+	padding: 20px;
+}
+.borders-top-left {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-top: 1pt solid $main-color;
+	border-left: 1pt solid $main-color;
+}	
+.borders-top-right {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-top: 1pt solid $main-color;
+	border-right: 1pt solid $main-color;
+	left: 328px;
+}
+.borders-bottom-left {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-bottom: 1pt solid $main-color;
+	border-left: 1pt solid $main-color;
+	top: 328px;
+}
+.borders-bottom-right {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-bottom: 1pt solid $main-color;
+	border-right: 1pt solid $main-color;
+	top: 328px;
+	left: 328px;
+}
+.rightside {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	text-align: center;
+	margin: 0 auto;
+	.dev-name {
+		font-family: $title-font;
+		font-size: 36px;
+		color: #666666;
+		margin: 30px auto;
+	}
+}
+.rightside-right {
+	position: absolute;
+    top: 250px;
+    left: 500px;
+}
+.rightside-line {
+	display: inline-block;
+	width: 100px;
+	height: 1px;
+	background-color: $main-color;
+	margin: 0 auto;
+}
+
+.position {
+	font-family: $text-font;
+	font-size: 24px;
+	color: #666666;
+	margin: 35px 0;
+}
+ul li {
+	display: inline-block;
+}
+.rightside-text {
+	font-family: $text-font;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.three-lines {
+	display: inline-block;
+	width: 20px;
+	height: 5px;
+	background-color: $main-color;
+	margin: 0 auto;
+}
+.three-lines:before,
+.three-lines:after{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	background-color: $main-color;
+}	
+.rightside-button {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 120px;
+	height: 25px;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	margin: 20px auto;
+	border-style: solid;
+	border: 1pt solid $main-color;
+}
+
+.three-dots {
+	text-align: center;
+}
+
+.dots {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: $main-color;
+}
+
+.dots:nth-child(2){
+	background-color: white;
+	border: 1pt solid $main-color;
+}
